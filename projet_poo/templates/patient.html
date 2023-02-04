@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <base href="/">
+    <link rel="stylesheet"  type="text/css" href="static/css/patient.css">
+    {% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="static/css/style3.css">
+
+</head>
+
+<header>
+
+	<nav class="menu">
+
+  <nav class="connexion">
+      <i class="fas fa-search"></i>
+    <a href="connexion">Home</a>
+    <i class="fas fa-search"></i>
+    <a href="visualisation">Visualisation</a>
+      <i class="fas fa-search"></i>
+    <a href="patient">Add patient</a>
+      <i class="fas fa-search"></i>
+    <a href="patients">Patients</a>
+  </nav>
+
+    </nav>
+
+</header>
+
+<body>
+<br><br><br><br>
+
+<div class="container">
+
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">Nom</label>
+      <input type="text" class="form-control" name="First_Name" placeholder="Nom">
+    </div>
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">Prenom</label>
+      <input type="text" class="form-control" name="Last_Name" placeholder="Prenom">
+    </div>
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">CIN</label>
+      <input type="text" class="form-control" name="CIN" placeholder="CIN">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">Date de naissance</label>
+      <input type="date" class="form-control" name="start_date" placeholder="Date de naissance">
+    </div>
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">Date visite</label>
+      <input type="date" class="form-control" name="date_visite" placeholder="Date visite">
+    </div>
+    <div class="form-group col-md-4">
+      <label style="color:#FEFFFE;font-weight: bold">Ville</label>
+      <input type="text" class="form-control" name="Ville" placeholder="Ville">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label style="color:#FEFFFE;font-weight: bold">Numero de telephone</label>
+      <input type="text" class="form-control" name="Mobile_Number" placeholder="Numero de telephone">
+    </div>
+    <div class="form-group col-md-6">
+      <label style="color:#FEFFFE;font-weight: bold">Genre</label> <br>
+      <input type="radio" name="Gender" value="Male" /> <label >Homme</label>
+      <input type="radio" name="Gender" value="Female" /> <label>Femme</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label style="color:#FEFFFE;font-weight: bold">Adresse</label>
+    <input type="text" class="form-control" name="Address" placeholder="Adresse">
+  </div>
+
+  <div class="form-group">
+      <div class="form-group col-md-4">
+        <label style="color:#FEFFFE;font-weight: bold">X-RAY image</label>
+        <input type="file" class="form-control" name="image">
+      </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Ajouter patient</button>
+</form>
+</div>
+
+</body>
+</html>
+<!-- partial -->
+
+</body>
+</html>
