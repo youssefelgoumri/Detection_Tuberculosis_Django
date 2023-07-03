@@ -1,3 +1,2 @@
 # Detection_Tuberculosis_Django
-Ce projet est développé en django (python) avec un modèle CNN, pour but de detecter la presence ou l'absence de la maladie de tuberculose chez une personne.
-
+Ce projet est développé en Django en utilisant un modèle CNN, dans le but de détecter la maladie de la tuberculose chez une personne.
